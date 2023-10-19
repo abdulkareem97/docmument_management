@@ -12,6 +12,7 @@ import './charts/ChartjsConfig';
 // Import pages
 import Dashboard from './pages/Dashboard';
 import Home from './pages/Home';
+import NewFaculty from './partials/admin/faculty/NewFaculty';
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
       <Dashboard >
         <Routes>
           <Route exact path="/" element={<Home />} />
+          <Route exact path="/newFaculty" element={<NewFaculty />} />
         </Routes>
       </Dashboard>
     </>
